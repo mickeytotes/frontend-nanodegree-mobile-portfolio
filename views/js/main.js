@@ -505,7 +505,6 @@ function updatePositions() {
   for (var i = 0; i < items.length; i++) {
     var phase = Math.sin((document.body.scrollTop / 1250) + (i % 5));
     items[i].style.left = items[i].basicLeft + 100 * phase + 'px';
-    console.log(items.length);
   }
 
   // User Timing API to the rescue again. Seriously, it's worth learning.
@@ -523,7 +522,7 @@ window.addEventListener('scroll', updatePositions);
 
 // Generates the sliding pizzas when the page loads.
 document.addEventListener('DOMContentLoaded', function() {
-  var cols = 8;
+  var cols = 5;
   var s = 256;
   for (var i = 0; i < 30; i++) {
     var elem = document.createElement('img');
