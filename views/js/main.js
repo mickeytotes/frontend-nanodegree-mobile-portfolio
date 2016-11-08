@@ -439,7 +439,7 @@ var resizePizzas = function(size) {
         default:
           console.log("bug in sizeSwitcher");
       }
-    //}
+    }
 
     //var newSize = sizeSwitcher(size);
     //var dx = (newSize - oldSize) * windowWidth;
