@@ -451,8 +451,9 @@ var resizePizzas = function(size) {
   function changePizzaSizes(size) {
     //create variable outside of for loop.
     var myContainer = document.getElementsByClassName("randomPizzaContainer");
-    var newwidth = (myContainer.offsetWidth + dx) + 'px';
     var dx = determineDx(myContainer, size);
+    var newwidth = (myContainer.offsetWidth + dx) + 'px';
+
     for (var i = 0; i < myContainer.length; i++) {
       //var dx = determineDx(myContainer[i], size);
       //var newwidth = (myContainer[i].offsetWidth + dx) + 'px';
