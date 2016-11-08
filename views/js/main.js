@@ -439,7 +439,7 @@ var resizePizzas = function(size) {
         default:
           console.log("bug in sizeSwitcher");
       }
-    }
+   // }
 
     //var newSize = sizeSwitcher(size);
     //var dx = (newSize - oldSize) * windowWidth;
@@ -451,10 +451,11 @@ var resizePizzas = function(size) {
   function changePizzaSizes(size) {
     //create variable outside of for loop.
     var myContainer = document.getElementsByClassName("randomPizzaContainer");
-    var newSize = sizeSwitcher(myContainer[i], size);
+
     for (var i = 0; i < myContainer.length; i++) {
       //var dx = determineDx(myContainer[i], size);
       //var newwidth = (myContainer[i].offsetWidth + dx) + 'px';
+      var newSize = sizeSwitcher(myContainer[i], size);
       var newwidth = (myContainer[i].offsetWidth + newSize) + 'px';
       myContainer[i].style.width = newwidth;
     }
